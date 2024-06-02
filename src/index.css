@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+@layer components {
+  .nav-link {
+    @apply text-base font-medium leading-6 text-white hover:text-amber-400;
+  }
+
+  .nav-link.active {
+    @apply text-amber-400;
+  }
+}
+
+.logo-text {
+  color: #f3ba2f;
+  text-shadow: 0.0625rem 0.0625rem 0 #fff;
+}
+
+.magic-button {
+  --border-bottom-width: 1px;
+  --border-color: #f3ba2f; /* Updated color */
+  --border-left-width: 1px;
+  --border-right-width: 1px;
+  --border-style: solid;
+  --border-top-width: 1px;
+  background: linear-gradient(
+    90deg,
+    #f3ba2f,
+    #d8a354 78.9465%
+  ); /* Updated gradient */
+  height: 100%;
+  opacity: 1;
+  box-shadow: 0 6px 34px -6px #f3ba2f,
+    /* Updated shadow */ inset 0 5px 10px -8px #d0af7e,
+    /* Updated shadow */ inset 0 -5px 10px -8px #d0af7e,
+    /* Updated shadow */ inset -5px 0 10px -8px #d0af7e,
+    /* Updated shadow */ inset 5px 0 10px -8px #d0af7e; /* Updated shadow */
+}
+
+.magic-button:hover {
+  --border-bottom-width: 1px;
+  --border-color: #d8a354; /* Updated color */
+  --border-left-width: 1px;
+  --border-right-width: 1px;
+  --border-style: solid;
+  --border-top-width: 1px;
+  background: linear-gradient(
+    90deg,
+    #f3ba2f,
+    #f1c583 78.9465%
+  ); /* Updated gradient */
+  height: 100%;
+  opacity: 1;
+  box-shadow: 0 6px 34px -3px #f3ba2f,
+    /* Updated shadow */ inset 0 5px 20px -7px #d0af7e,
+    /* Updated shadow */ inset 0 -5px 20px -7px #d0af7e,
+    /* Updated shadow */ inset -5px 0 20px -7px #d0af7e,
+    /* Updated shadow */ inset 5px 0 20px -7px #d0af7e; /* Updated shadow */
+}
+
+.bg-gradient-1 {
+  background: linear-gradient(
+    120deg,
+    #f3ba2f 0%,
+    #201700 8%,
+    #000 33.49%,
+    #000 63.16%,
+    #201700 85.69%,
+    #f3ba2f 100%
+  );
+}
+
+.filter-hue-1 {
+  filter: hue-rotate(220deg);
+}
+
+.filter-hue-2 {
+  filter: hue-rotate(157deg);
+}
+
+.filter-hue-3 {
+  filter: grayscale(1);
+}
